@@ -15,7 +15,7 @@ func _input(event):
 		following = false
 	elif event is InputEventMouseMotion:		
 		if following:
-			position -= event.relative*moveFactor
+			position -= event.relative * moveFactor / zoom
 	elif event.is_action("zoom_in"):
 		if (zoom + Vector2.ONE * zoomFactor).length_squared() < maxZoom:
 			zoom += Vector2.ONE * zoomFactor
