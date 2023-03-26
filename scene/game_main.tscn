@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://b14488lprycfl"]
+
+[ext_resource type="Texture2D" uid="uid://bp5rs571kuhkd" path="res://blender/world/tilemap.png" id="1_077vu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_brvoo"]
+texture = ExtResource("1_077vu")
+texture_region_size = Vector2i(512, 512)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mhb0j"]
+tile_shape = 1
+tile_size = Vector2i(512, 256)
+sources/2 = SubResource("TileSetAtlasSource_brvoo")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Walls" type="TileMap" parent="."]
+y_sort_enabled = true
+scale = Vector2(0.1, 0.1)
+tile_set = SubResource("TileSet_mhb0j")
+format = 2
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(-65537, 131074, 0, -2, 131074, 0, 65534, 131074, 0, 131070, 131074, 0, 196607, 131074, 0, 262143, 131074, 0, 262144, 131074, 0, 196608, 131074, 0, 131073, 131074, 0, 65537, 131074, 0, 2, 131074, 0, -65535, 131074, 0, -131071, 131074, 0, -196608, 131074, 0, -262144, 131074, 0, -131073, 131074, 0, -131072, 65538, 0, -1, 65538, 0, 65535, 65538, 0, 131071, 65538, 0, 131072, 65538, 0, 65536, 65538, 0, 1, 65538, 0, -65536, 65538, 0, 0, 2, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
