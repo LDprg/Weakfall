@@ -1,5 +1,0 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/d/git/Weakfall/cmake-build-relwithdebinfo && /usr/bin/cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_C_COMPILER=/usr/bin/clang-15 '-DCMAKE_CXX_COMPILER=/usr/bin/clang++-15' -G Ninja -S /mnt/d/git/Weakfall -B /mnt/d/git/Weakfall/cmake-build-relwithdebinfo"
--- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/d/git/Weakfall/cmake-build-relwithdebinfo

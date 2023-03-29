@@ -1,3 +1,0 @@
-/mnt/d/git/Weakfall/cmake-build-debug/CMakeFiles/Weakfall.dir
-/mnt/d/git/Weakfall/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/d/git/Weakfall/cmake-build-debug/CMakeFiles/rebuild_cache.dir
