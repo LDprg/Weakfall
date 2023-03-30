@@ -8,9 +8,6 @@ extends Camera2D
 
 var following = false
 
-func _ready():
-	position -= get_viewport_rect().size/2
-
 func _input(event):
 	if event.is_action_pressed("move_view"):
 		following = true
@@ -30,4 +27,4 @@ func get_real_mouse_position():
 	return get_mouse_position()/zoom + position
 
 func get_mouse_position():
-	return get_viewport().get_mouse_position()
+	return get_viewport().get_mouse_position() - get_viewport_rect().size/2

@@ -58,6 +58,15 @@ size_flags_vertical = 4
 layout_mode = 2
 text = "Walls"
 
+[node name="Hide" type="MarginContainer" parent="CanvasLayer/SubViewportContainer/UI/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="CanvasLayer/SubViewportContainer/UI/MarginContainer/MarginContainer/HBoxContainer/Hide" groups=["State"]]
+layout_mode = 2
+text = "Hide"
+
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/SubViewportContainer/UI"]
 anchors_preset = 1
 anchor_left = 1.0
@@ -75,3 +84,4 @@ text = "ERROR"
 
 [connection signal="pressed" from="CanvasLayer/SubViewportContainer/UI/MarginContainer/MarginContainer/HBoxContainer/Remove/Button" to="CanvasLayer/SubViewportContainer/Game/GameNode" method="_on_remove_pressed"]
 [connection signal="pressed" from="CanvasLayer/SubViewportContainer/UI/MarginContainer/MarginContainer/HBoxContainer/Walls/Button" to="CanvasLayer/SubViewportContainer/Game/GameNode" method="_on_walls_pressed"]
+[connection signal="pressed" from="CanvasLayer/SubViewportContainer/UI/MarginContainer/MarginContainer/HBoxContainer/Hide/Button" to="CanvasLayer/SubViewportContainer/Game/GameNode" method="_on_hide_pressed"]
